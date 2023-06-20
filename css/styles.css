@@ -475,12 +475,12 @@ img {
 
 
 .footer-soc-text {
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px;
 }
 
 .footer-soc-list {
@@ -513,7 +513,7 @@ img {
     background-color: #31D0AA;
 }
 
-.footer-bottom {
+.footer-container-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -525,48 +525,47 @@ img {
 
 .footer-form {
     display: flex;
+    gap: 24px;
 }
 
 .footer-input {
     width: 264px;
     height: 40px;
     border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    background-color: #2E2F42;
-    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     padding-left: 16px;
-    margin-right: 24px;
-    outline: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #FFFFFF;
 }
 
 .footer-input::placeholder {
-    font-size: 12px;
-    line-height: 2;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.04em;
     color: #FFFFFF;
 }
    
 .footer-btn {
     min-width: 165px;
     height: 40px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    background: #4D5AE5;
-    border-radius: 4px;
+    background-color: #4D5AE5;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
 }
 
 .footer-form-icon {
+    margin-left: 16px;
     fill: #ffffff;
 }
 
@@ -671,7 +670,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    display: inline-block;
+    display: block;
     margin-bottom: 4px;
 }
 
