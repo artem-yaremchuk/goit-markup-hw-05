@@ -733,10 +733,10 @@ img {
     text-decoration: underline;
 }
 
-.input-check:checked .check-text-span {
+.input-check:checked + .check-text > .check-text-span {
     background-color: #404BBF;
     border: none;
-    fill: #ffffff;
+    fill: #F4F4FD; 
 }
 
 .modal-form-btn {
