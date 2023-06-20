@@ -514,13 +514,11 @@ img {
 }
 
 .footer-container-form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
 }
 
 .footer-subscribe-form {
-  margin-left: 80px;
+    
 }
 
 .footer-form {
