@@ -163,6 +163,7 @@ img {
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
+    margin: 0 auto;
 }
 
 .hero-container {
@@ -410,7 +411,6 @@ img {
 .customers-item-link {
     width: 100%;
     height: 100%;
-    padding: 16px 32px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     display: flex;
@@ -475,11 +475,11 @@ img {
 
 
 .footer-soc-text {
-    color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #FFFFFF;
     margin-bottom: 16px;
 }
 
@@ -513,6 +513,63 @@ img {
     background-color: #31D0AA;
 }
 
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-subscribe-form {
+  margin-left: 80px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: #2E2F42;
+    color: #FFFFFF;
+    padding-left: 16px;
+    margin-right: 24px;
+    outline: transparent;
+}
+
+.footer-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+   
+.footer-btn {
+    min-width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #4D5AE5;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-form-icon {
+    fill: #ffffff;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -534,6 +591,7 @@ img {
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px; 
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -570,9 +628,137 @@ img {
     pointer-events: none;
 }
 
-.icon-close-black {
+.modal-icon {
     fill: currentColor;
     transition: fill var(--transition);
+}
+
+.modal-title {
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 16px;
+} 
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    padding-right: 16px;
+    outline: transparent;
+    transition: border-color var(--transition);
+}
+
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-input:focus + .input-icon {
+    fill: #4D5AE5;
+}
+
+.modal-field {
+    margin-bottom: 8px;
+}
+
+.modal-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-icon {
+    fill: currentColor;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--transition);
+   
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+}
+
+.modal-textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.check-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    display: flex;
+    align-items: center;
+}
+
+.check-text span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.check-text a {
+    color: #4D5AE5;
+    text-decoration: underline;
+}
+.input-check:checked + .check-text span {
+    background-color: #404BBF;
+    border: none;
+    fill: #ffffff;
+}
+
+.modal-form-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+    transition: background-color var(--transition);
+}
+
+.modal-form-btn:is(hover, :focus) {
+    background-color: #404BBF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /**---------Portfolio.html----------*/
